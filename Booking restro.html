@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+    <link rel="stylesheet" href="/main.css">
+
+</head>
+<body>
+    <section class="banner">
+        <h1>BOOK YOUR TABLE HERE</h1>
+        <div class="card-container">
+            <div class="card-img">
+            <img src="box.jpg" alt="card-img">
+            </div>
+
+            <div class="box-content">
+                <h3>Reserve Now </h3>
+                <form>
+                    <div class="from-row">
+                        <select name="days" id="day-select" required>
+                            <option value="day-select" >Select Day</option>
+                            <option value="sunday">Sunday</option>
+                            <option value="monday">Monday</option>
+                            <option value="tuesday">Tuesday</option>
+                            <option value="wednesday">Wednesday</option>
+                            <option value="thursday">Thursday</option>
+                            <option value="friday">Friday</option>
+                            <option value="saturday">Saturday</option>
+                        </select>
+
+                        <select name="hours" id="hour-select" required>
+                            <option value="hour-select">Select Slot</option>
+                            <option value="10">10:00</option>
+                            <option value="10">12:00</option>
+                            <option value="10">14:00</option>
+                            <option value="10">16:00</option>
+                            <option value="10">18:00</option>
+                            <option value="10">20:00</option>
+                            <option value="10">22:00</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="text" placeholder="First Name" id="first name" required>
+                        <input type="text" placeholder="Last Name " id="last name" required> 
+                    </div>
+
+                    <div class="form-row">
+                        <input type="text" placeholder="Contact Number" id="Contact" required>
+                        <input type="number" placeholder="Persons?" min="1">
+                    </div>
+
+                    <div class="form-row">
+                        <input type="submit" placeholder="BOOK TABLE">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
